@@ -1,0 +1,28 @@
+<h2>You can only choose one! Unfortunately, one of their feelings will be hurt :(</h2>
+<div class="entire-thing">
+  <div class="image-container">
+    <img src="<%= image_url %>" alt="Animal Image">
+    <div class="form-container">
+      <form action="/win_lose" method="post">
+        <button type="submit">Pick me!:)</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <img src="<%= image_url2 %>" alt="Animal Image">
+    <div class="form-container">
+      <form action="/win_lose" method="post">
+        <button type="submit">Pick me!:)</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<p></p>
+
+<div class= "done">
+  <form action="/win_lose" method="get">
+    <button type="submit">I'm done choosing</button>
+  </form>
+</div>

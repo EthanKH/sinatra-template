@@ -4,9 +4,64 @@
     <title>Sinatra Template</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <style>
+      .navbar {
+        display: flex;
+      	justify-content: space-around;
+      }
+      
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .start {
+        display: flex;
+        justify-content: center;
+      }
+
+     .image-container {
+        display: inline-block;
+        text-align: center;
+        margin-right: 20px;
+      }
+
+      img {
+        width: 500px;
+        height: 350px;
+        border: 2px solid black;
+      }
+
+      .form-container {
+        text-align: center;
+      }
+
+      .entire-thing {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center;
+      }
+
+      .done {
+        display: flex;
+        justify-content: center;
+      }
+
+    </style>
   </head>
 
   <body>
+   <div class="navbar">
+      <div><a href="/">Home</a></div>
+      <div><a href="/random">Random Picture</a></div>
+    </div>
+
+    <h1>Dog & Fox Tourney</h1>
+
     <%= yield %>
   </body>
 </html>
