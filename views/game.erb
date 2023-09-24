@@ -3,18 +3,14 @@
   <div class="image-container">
     <img src="<%= image_url %>" alt="Animal Image">
     <div class="form-container">
-      <form action="/win_lose" method="post">
-        <button type="submit">Pick me!:)</button>
-      </form>
+      <a href="/pick_winner/1">Pick me! :)</a>
     </div>
   </div>
 
   <div class="image-container">
     <img src="<%= image_url2 %>" alt="Animal Image">
     <div class="form-container">
-      <form action="/win_lose" method="post">
-        <button type="submit">Pick me!:)</button>
-      </form>
+     <a href="/pick_winner/2">Pick me! :)</a>
     </div>
   </div>
 </div>
@@ -22,7 +18,5 @@
 <p></p>
 
 <div class= "done">
-  <form action="/win_lose" method="get">
-    <button type="submit">I'm done choosing</button>
-  </form>
+  <a href="/winners_losers">I'm done choosing</a>
 </div>

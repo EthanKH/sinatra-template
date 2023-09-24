@@ -1,2 +1,26 @@
-<h2>Winners!</h2>
-<h2>Losers...</h2>
+<html>
+<head>
+  <title>Game Results</title>
+</head>
+<body>
+  <h1>Game Results</h1>
+
+  <h2>Winners</h2>
+  <ul>
+    <% @winners.each do |winner| %>
+      <li><%= winner %></li>
+    <% end %>
+  </ul>
+
+  <h2>Losers</h2>
+  <ul>
+    <% @losers.each do |loser| %>
+      <li><%= loser %></li>
+    <% end %>
+  </ul>
+
+  <form action="/restart_game" method="get">
+    <button type="submit">Restart Game</button>
+  </form>
+</body>
+</html>
