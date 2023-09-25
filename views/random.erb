@@ -1,6 +1,12 @@
 <h2>No competition, have a free picture!</h2>
 <div class="entire-thing">
   <div class="image-container">
-      <img src="<%= image_url %>" alt="Animal Image">
+      <img src="<%= @image_url %>" alt="Sorry this is a gif! Currently unsupported">
   </div>
+</div>
+
+<div class="done">
+  <form action="/random" method="get">
+    <button type="submit">Another please!</button>
+  </form>
 </div>

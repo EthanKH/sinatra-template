@@ -1,26 +1,17 @@
-<html>
-<head>
-  <title>Game Results</title>
-</head>
-<body>
-  <h1>Game Results</h1>
-
-  <h2>Winners</h2>
-  <ul>
-    <% @winners.each do |winner| %>
-      <li><%= winner %></li>
-    <% end %>
-  </ul>
-
-  <h2>Losers</h2>
-  <ul>
-    <% @losers.each do |loser| %>
-      <li><%= loser %></li>
-    <% end %>
-  </ul>
-
-  <form action="/restart_game" method="get">
-    <button type="submit">Restart Game</button>
+<div class="done">
+  <form action="/game" method="get">
+    <button type="submit">Poor guy! Go again?</button>
   </form>
-</body>
-</html>
+</div>
+
+<h2>Winners</h2>
+<div class= "winner">
+  <img src="<%= params['win'] %>" alt="Winning Image">
+</div>
+
+<h2>Losers</h2>
+<div class= "loser">
+  <img src="<%= params['lose'] %>" alt="Losing Image">
+</div>
+
+<p></p>

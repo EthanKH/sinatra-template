@@ -1,22 +1,16 @@
 <h2>You can only choose one! Unfortunately, one of their feelings will be hurt :(</h2>
 <div class="entire-thing">
   <div class="image-container">
-    <img src="<%= image_url %>" alt="Animal Image">
+    <img src="<%= @image_url %>" alt="Sorry, this is a gif! Currently unsupported">
     <div class="form-container">
-      <a href="/pick_winner/1">Pick me! :)</a>
+      <a href="/pick_winner/1?win=<%= @image_url %>&lose=<%= @image_url2 %>">Pick me! :)</a>
     </div>
   </div>
 
   <div class="image-container">
-    <img src="<%= image_url2 %>" alt="Animal Image">
+    <img src="<%= @image_url2 %>" alt="Sorry, this is a gif! Currently unsupported">
     <div class="form-container">
-     <a href="/pick_winner/2">Pick me! :)</a>
+      <a href="/pick_winner/2?win=<%= @image_url2 %>&lose=<%= @image_url %>">Pick me! :)</a>
     </div>
   </div>
-</div>
-
-<p></p>
-
-<div class= "done">
-  <a href="/winners_losers">I'm done choosing</a>
 </div>

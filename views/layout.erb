@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <style>
+
+      body {
+        background-color: gray;
+      }
+
       .navbar {
         display: flex;
       	justify-content: space-around;
@@ -31,8 +36,8 @@
       }
 
       img {
-        width: 500px;
-        height: 350px;
+        max-width: 60%;
+        max-height: 45vh;
         border: 2px solid black;
       }
 
@@ -42,13 +47,30 @@
 
       .entire-thing {
         display: flex;
-        justify-content: center; /* Center horizontally */
+        justify-content: center;
         align-items: center;
       }
 
       .done {
         display: flex;
         justify-content: center;
+      }
+
+      .winner, .loser{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+      }
+
+      .winner img, .loser img {
+        max-width: 60%;
+        max-height: 45vh;
+      }
+
+      .loser img{
+        filter: grayscale(100%);
+      }
+
       }
 
     </style>
@@ -60,7 +82,7 @@
       <div><a href="/random">Random Picture</a></div>
     </div>
 
-    <h1>Dog & Fox Tourney</h1>
+    <h1>Dog-Fox Tourney</h1>
 
     <%= yield %>
   </body>
