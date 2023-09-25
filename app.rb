@@ -1,6 +1,6 @@
 require "sinatra"
 require "sinatra/reloader"
-require "http"
+# require "http"
 require "net/http"
 require 'json'
 
