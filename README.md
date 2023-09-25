@@ -1,18 +1,1 @@
-# sinatra-template
-
-Use this repository to create new Sinatra apps. 
-
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
-
-```ruby
-require "sinatra/activerecord"
-```
-
-And in the `config/environment.rb` file add this code block:
-
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+Hello, this is a simple project I made that pulls random images of foxes or dogs from 2 separate APIS. Unfortunately you can only pick one favorite between them, and leave the other one feeling a bit sad. However, there is also a page that will simply randomly generate photos without needing to compare!
